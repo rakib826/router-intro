@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
     <div>
       <Header></Header>
-      <div className="flex justify-center items-center rounded-lg mt-4">
+      {/* <div className="flex justify-center items-center rounded-lg mt-4">
         <h1 className="text-center text-5xl font-bold bg-green-900 flex items-center rounded-lg py-6 px-4 text-white">Welcome to Home Component</h1>
-      </div>
+      </div> */}
       <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
