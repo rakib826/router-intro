@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 const PostDetails = () => {
   const post = useLoaderData();
   const { id, title, body } = post;
@@ -9,6 +9,7 @@ const PostDetails = () => {
         <h1 className="text-lg font-semibold">Id: {id} </h1>
         <h2 className="text-xl font-bold">Title: {title}</h2>
         <p>Description: {body}</p>
+        <Link to={`/posts`}><button className="px-2 py-1 rounded-md bg-red-500 text-white">← Go Back</button></Link>
       </div>
     </div>
   );
